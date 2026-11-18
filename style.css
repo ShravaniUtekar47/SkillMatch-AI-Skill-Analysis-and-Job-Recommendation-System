@@ -1,0 +1,231 @@
+
+/* =========================================
+   SKILLMATCH AI - PREMIUM DASHBOARD DESIGN
+========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --background: #f5f6fc;
+    --surface: #ffffff;
+    --primary: #6750d8;
+    --primary-dark: #4835a6;
+    --navy: #171a35;
+    --text: #252943;
+    --muted: #777d96;
+    --green: #159b68;
+    --red: #dc5265;
+    --border: #e9eaf2;
+    --shadow: 0 8px 30px rgba(35, 30, 80, 0.07);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(120deg, #171a35, #30246e, #6750d8);
+    color: white;
+    padding: 38px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+header p {
+    color: #dcd8ff;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+/* CARDS */
+
+.card {
+    background: var(--surface);
+    padding: 28px;
+    margin-bottom: 24px;
+    border: 1px solid var(--border);
+    border-radius: 17px;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(35, 30, 80, 0.10);
+}
+
+.card h2 {
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    color: var(--navy);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+
+p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* SKILL INPUT */
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 135px;
+    padding: 17px;
+    margin-top: 15px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #fafaff;
+    font-family: inherit;
+    font-size: 14px;
+    color: var(--text);
+    resize: vertical;
+    outline: none;
+    transition: 0.2s;
+}
+
+textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(103, 80, 216, 0.10);
+}
+
+/* BUTTON */
+
+button {
+    background: linear-gradient(120deg, var(--primary), var(--primary-dark));
+    color: white;
+    padding: 14px 27px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 18px rgba(103, 80, 216, 0.25);
+}
+
+/* RECOMMENDATION */
+
+.percentage {
+    color: var(--primary);
+    font-size: 32px;
+    font-weight: 800;
+    margin: 8px 0;
+}
+
+.job {
+    padding: 18px;
+    margin: 15px 0;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    border-radius: 11px;
+    background: #fcfbff;
+}
+
+.job h3 {
+    color: var(--primary-dark);
+}
+
+/* SKILL HEADINGS */
+
+.matched {
+    color: var(--green);
+}
+
+.missing {
+    color: var(--red);
+}
+
+/* SKILL TAGS */
+
+.skill {
+    display: inline-block;
+    padding: 7px 13px;
+    margin: 5px 4px 5px 0;
+    border-radius: 30px;
+    background: #eeeafd;
+    color: #5540b2;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    padding: 23px;
+    text-align: center;
+    background: var(--navy);
+    color: #dcd8ff;
+    font-size: 13px;
+}
+
+footer p {
+    color: #dcd8ff;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 28px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 94%;
+        margin: 22px auto;
+    }
+
+    .card {
+        padding: 19px;
+    }
+
+    .percentage {
+        font-size: 27px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
